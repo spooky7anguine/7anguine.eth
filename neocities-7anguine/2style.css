@@ -1,7 +1,7 @@
 body { 
   font-family:Helvetica;
   color: white;
-  background-image: url("/CSS/background.gif");
+  background-image: url("background.gif");
   overflow-y:scroll;
   
 }
