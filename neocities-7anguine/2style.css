@@ -1,0 +1,474 @@
+body { 
+  font-family:Helvetica;
+  color: white;
+  background-image: url("/CSS/background.gif");
+  overflow-y:scroll;
+  
+}
+
+h1.rainbow { /* main headers, rainbow big*/
+	text-align: center;
+  font-size: 30px;
+  align-content: center;
+}
+
+
+h2 { /* normal font white - updates; spooky notes*/
+  text-align: center;
+	font-size: 16px;
+}
+
+
+h3 { /* normal font 7anguine's red speech*/
+	color: #f70404; 
+	text-decoration:none; 
+	font-weight:bold;
+}
+
+h4.rainbow{ /*normal font rainbow; used for regular text with rainbow*/
+	text-align: center;
+  font-size: 16px; 
+
+}
+
+div {
+    width: inherit;
+    margin: auto;
+    align-content: center;
+    max-width: 768px;
+    text-align:center;
+    
+}  
+
+footer {
+  left: 0; 
+  width: 100%; 
+  bottom: 0; 
+  position:fixed;
+  
+}
+
+#main {
+  max-width: 768px;
+  text-align:center;
+  margin: auto;
+  align-content: center;
+  
+}
+
+.red {
+ 	color: #f70404; 
+	text-decoration:none; 
+	font-weight:bold; 
+}	
+	
+.dialog { /*grey tile back*/
+  background-color: #131313; /*the color of the tile*/
+  /*give the button curved corners, alter the size as required*/
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border-color: #f70404;
+  border:outset;
+  width:auto;
+  margin-left: auto ;
+  margin-right: auto ;
+  margin-top: 10px;
+  margin-bottom:10px;
+  padding:10px;
+  display:block;
+
+
+}
+
+.dialog2 { /*enter button*/
+  background-color: #131313; /*the color of the tile*/
+  /*give the button curved corners, alter the size as required*/
+  -moz-border-radius: 90px;
+  -webkit-border-radius: 90px;
+  border-radius: 90px;
+  border:solid;
+  border-width: 1px;
+  padding-left: 1em;
+  padding-right: 1em;
+  display: block;
+  width: 18vmax;
+  height: 8vmax;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 8vmax;
+
+}
+
+.box1 { /*marquee outline box with black bg*/
+  padding: 3px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #f70404;
+  background-color:#000101;
+  animation: rainbow 2.5s linear;
+	animation-iteration-count: infinite;
+
+}
+
+.box2 { /*marquee outline box with transparent bg*/
+  padding: 3px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #f70404;
+
+
+}
+
+.button1 { /*grey button red font and outline*/
+  font-family:Helvetica;
+  color: #f70404;
+  background-color:#131313;
+  border:solid;
+  border-width: 1px;
+  border-style: outset;
+  box-sizing: border-box;
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+  font-size:2vmax;
+  padding: 2px;
+  display: inline-block;
+  width: 10vmax;
+  height: 3vmax;
+  margin:auto;
+  text-align: center;
+  line-height: 3vmax;
+
+
+}
+
+.button4 { /*grey button red font and outline - for chosen tab*/
+  font-family:Helvetica;
+  color: black;
+  background-color:#c8bcbd;
+  border-color:#f70404;
+  border-width: 1px;
+  border-style: outset;
+  box-sizing: border-box;
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+  font-size:2vmax;
+  padding: 2px;
+  display: inline-block;
+  width: 10vmax;
+  height: 3vmax;
+  margin:auto;
+  text-align: center;
+  line-height: 3vmax;
+
+
+}
+
+    .button4 a:link {
+      color: #000000; text-decoration:none; font-weight:normal; 
+    }
+    .button4 a:visited {
+      color: #000000; text-decoration:none; font-weight:normal; 
+    } 
+    .button4 a:active {
+      color: #000000; text-decoration:none; font-weight:normal; 
+    }
+    .button4 a:hover {
+      color: #f70404; text-decoration:none; font-weight:normal;
+    }
+    
+.button2 { /*black button grey font and outline - contacts*/
+  font-family:Helvetica;
+  background-color:black;
+  border-color:#c8bcbd;
+  border-style: outset;
+  border-width: 1px;
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+  font-size:2vmax;
+  padding-left: auto;
+  padding-right: auto;
+  display: block;
+  box-sizing: border-box;
+  width: 14vmax;
+  height: 3vmax;
+  margin:auto;
+  text-align: center;
+  line-height: 3vmax;
+
+
+}
+
+.button3 { /*black button grey font and outline - for y.at wallet and extended bubbles*/
+  font-family:Helvetica;
+  color: #c8bcbd;
+  background-color:black;
+  border-color:#c8bcbd;
+  border-style: outset;
+  border-width: 1px;
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+  font-size:2vmax;
+  padding-left: auto;
+  padding-right: auto;
+  display: block;
+  box-sizing: border-box;
+  width: 18vmax;
+  height: 3vmax;
+  margin:auto;
+  text-align: center;
+  line-height: 3vmax;
+
+
+}
+
+/* unvisited link */
+a:link {
+    color: #f70404;
+    text-decoration: none;
+    
+
+}
+
+/* visited link */
+a:visited {
+    color: #f70404;
+    text-decoration: none;
+    
+}
+
+/* mouse over link */
+a:hover {
+    color: #29e132;
+    text-decoration: none;
+    cursor:pointer;
+   
+}
+
+/* selected link */
+a:active {
+    color: #29e132;
+    text-decoration: none;
+   
+}
+
+
+::-webkit-scrollbar {
+  width: 16px;
+  max-width: 16px;
+}
+
+::-webkit-scrollbar-track {
+  background: url("scrollbackground.png");
+}
+::-webkit-scrollbar-thumb {
+  background: #BDBDBD;
+  border: #DFDFDF 2px outset;
+}
+
+::-webkit-scrollbar-button:vertical:start:decrement{
+  display:block;
+  background: url("scrollbarsprite.png") 0px 0px;
+  width: 16px;
+  max-width: 16px;
+  height: 16px;
+  max-height: 16px;
+  border: #DFDFDF 2px outset;
+            }
+            
+            ::-webkit-scrollbar-button:vertical:end:increment{
+            	display:block;
+            	background: url("scrollbarsprite.png") 0px 12px;
+            	width: 16px;
+            	max-width: 16px;
+            	height: 16px;
+            	max-height: 16px;
+            	border: #DFDFDF 2px outset;
+            }
+            
+            ::-webkit-scrollbar-button:horizontal:start:decrement{
+            	display:block;
+            	background: url("scrollbarsprite.png") 12px 12px;
+            	width: 16px;
+            	max-width: 16px;
+            	height: 16px;
+            	max-height: 16px;
+            	border: #DFDFDF 2px outset;
+            }
+            
+            ::-webkit-scrollbar-button:horizontal:end:increment{
+            	display:block;
+            	background: url("scrollbarsprite.png") 12px 1px;
+            	width: 16px;
+            	max-width: 16px;
+            	height: 16px;
+            	max-height: 16px;
+            	border: #DFDFDF 2px outset;
+            }
+                        
+
+.rainbow {
+  text-align: center;
+  animation: colorRotate 6s linear 0s infinite;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+ 
+  background: #555; 
+} 
+
+
+.rainbow-bg{
+		animation: rainbow-bg 2.5s linear;
+		animation-iteration-count: infinite;
+}
+
+.rainbow{
+		animation: rainbow 2.5s linear;
+		animation-iteration-count: infinite;
+}
+
+@keyframes rainbow-bg{
+		100%,0%{
+			background-color: rgb(255,0,0);
+		}
+		8%{
+			background-color: rgb(255,127,0);
+		}
+		16%{
+			background-color: rgb(255,255,0);
+		}
+		
+		83%{
+			background-color: rgb(255,0,255);
+		}
+		91%{
+			background-color: rgb(255,0,127);
+		}
+}
+
+@keyframes rainbow{
+		100%,0%{
+			color: rgb(255,0,0);
+		}
+		8%{
+			color: rgb(255,127,0);
+		}
+		16%{
+			color: rgb(255,255,0);
+		}
+		91%{
+			color: rgb(255,0,127);
+		}		
+}		
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+.video-container {
+  width:  85vw;
+  height: 50.625vw; /* 90*9/16 */
+
+}
+
+@media (min-width: 650px) {
+  .video-container {
+    width: 560px;
+    height:315px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+ 
+}
+
+@media (min-width: 1850px) {
+  .button1 {
+    width: auto;
+    height: auto;
+    font-size: 1vw;  
+    padding-left: 1vw;
+    padding-right: 1vw;
+    margin:auto;
+    text-align: center;
+    line-height: 2vw;
+    border-width: 2px;
+  }  
+  .button4 { /*grey button red font and outline - for chosen tab*/
+    width: auto;
+    height: auto;
+    font-size: 1vw;  
+    padding-left: 1vw;
+    padding-right: 1vw;
+    margin:auto;
+    text-align: center;
+    line-height: 2vw;
+    border-width: 2px;
+  }
+
+    .button4 a:link {
+      color: #000000; text-decoration:none; font-weight:normal; 
+    }
+    .button4 a:visited {
+      color: #000000; text-decoration:none; font-weight:normal; 
+    } 
+    .button4 a:active {
+      color: #000000; text-decoration:none; font-weight:normal; 
+    }
+    .button4 a:hover {
+      color: #f70404; text-decoration:none; font-weight:normal;
+    }
+    
+  .button2 { /*black button grey font and outline - contacts*/
+    height: 2em;
+    width: 7em;
+    font-size: 2em;  
+    margin:auto;
+    text-align: center;
+    line-height: 2em;
+    padding: 0;
+    border-width: 2px;
+  }
+
+  .button3 { /*black button grey font and outline - for y.at wallet and extended bubbles*/
+    height: 2em;
+    width: 9em;
+    font-size: 2em;  
+    margin:auto;
+    text-align: center;
+    line-height: 2em;
+    padding: 0;
+    border-width: 2px;
+  }  
+    
+  .dialog2 { /*enter button*/
+  border-width: 2px;
+  padding-left: 1vmax;
+  padding-right: 1vmax;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin:auto;
+  line-height: 6vmax;
+  width: 9vmax;
+  height: 4vmax;
+  box-sizing: content-box;
+  }  
+  
+}
+
+
+
+
+
+
