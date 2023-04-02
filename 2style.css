@@ -9,14 +9,14 @@ body {
 
 h1.rainbow { /* main headers, rainbow big*/
 	text-align: center;
-  font-size: 30px;
+  font-size: 1vw;
   align-content: center;
 }
 
 
 h2 { /* normal font white - updates; spooky notes*/
   text-align: center;
-	font-size: 16px;
+	font-size: .5vw;
 }
 
 
@@ -24,16 +24,17 @@ h3 { /* normal font 7anguine's red speech*/
 	color: #f70404; 
 	text-decoration:none; 
 	font-weight:bold;
+	font-size: .5vw; 
 }
 
 h4.rainbow{ /*normal font rainbow; used for regular text with rainbow*/
 	text-align: center;
-  font-size: 16px; 
+  font-size: .5vw; 
 
 }
 
 h5 { /* sigil icons*/
-  font-size: 60px;
+  font-size: 1.05vw;
 
 }
 
