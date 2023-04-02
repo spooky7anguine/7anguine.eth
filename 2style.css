@@ -315,34 +315,11 @@ a:active {
 } 
 
 
-.rainbow-bg{
-		animation: rainbow-bg 2.5s linear;
-		animation-iteration-count: infinite;
-}
-
 .rainbow{
 		animation: rainbow 2.5s linear;
 		animation-iteration-count: infinite;
 }
 
-@keyframes rainbow-bg{
-		100%,0%{
-			background-color: rgb(255,0,255);
-		}
-		8%{
-			background-color: rgb(255,127,0);
-		}
-		16%{
-			background-color: rgb(255,255,0);
-		}
-		
-		83%{
-			background-color: rgb(255,0,255);
-		}
-		91%{
-			background-color: rgb(255,0,127);
-		}
-}
 
 @keyframes rainbow{
 		100%,0%{
