@@ -37,13 +37,6 @@ h5 { /* sigil icons*/
 
 }
 
-div {
-    width: inherit;
-    align-content: center;
-    max-width: 768px;
-    text-align:center;
-    
-}  
 
 .red {
  	color: #f70404; 
@@ -444,14 +437,18 @@ a:active {
 }
 
 #content-wrap {
-  padding-bottom: 3vmax;    /* Footer height */
+  padding-bottom:45px ;    /* Footer height */
+  max-width: 768px;
+  text-align:center;
+  margin: auto;
+  align-content: center;
 }
 
 #footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 3vmax;            /* Footer height */
+  height: 45px;            /* Footer height */
 }
 
 
