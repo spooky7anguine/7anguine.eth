@@ -55,10 +55,6 @@ h6 { /* small */
 
 #content-wrap { /* div container starting after #page-container ending before <footer>. adds padding size to match footer size, make sure two heights match below */
   padding-bottom:40px ;    /* Footer height ---------------------------------------------------------- vvvvv*/
-  max-width: 768px;
-  text-align: center;
-  margin: auto;
-  align-content: center;
 }  
 
 #footer {
@@ -96,6 +92,10 @@ h6 { /* small */
   margin-bottom:10px;
   padding:10px;
   display:block;
+  max-width: 768px;
+  text-align: center;
+  margin: auto;
+  align-content: center;
   
 }  
 .enter { /*enter button*/
@@ -520,10 +520,20 @@ a:active {
   overflow-wrap: break-word; 
 }
 
+#ether {
+  display: flex;
+  align-content: flex-end;
+  margin-left: 70%;
+}  
 
 
-
- 
+#head {
+  display:block;
+  max-width: 768px;
+  text-align: center;
+  margin: auto;
+  align-content: center;
+}  
   
 
 
