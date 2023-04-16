@@ -150,7 +150,8 @@ h6 { /* small */
   height: 3vmax;
   margin:auto;
   text-align: center;
-  line-height: 3vmax;
+
+
 
 
 }
@@ -173,7 +174,6 @@ h6 { /* small */
   height: 3vmax;
   margin:auto;
   text-align: center;
-  line-height: 3vmax;
 
 
 }
@@ -402,7 +402,7 @@ a:active {
             }       
 }
 
-@media (min-width: 1850px) { /* i did this shit backwards by accident, this is settings for desktops. default shit is for mobile -_- */
+@media (min-width: 1850px) { /* i did this shit backwards by accident, this is settings for desktops. default shit is for mobile -_- actually maybe not? idfk*/
   .button1 {
     width: auto;
     height: auto;
