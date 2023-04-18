@@ -1,39 +1,47 @@
-body { 
-  font-family: Helvetica;
+body {  
   color: white;
   background-image: url("background.gif");
   overflow-y:scroll;
+  font-family: "Helvetika", serif;
 
-  
-}                           /******************** I fucked up the order when adding viewport shit for mobile, so all the default stuff up top here is for mobile, desktop viewer below ************/
+}
+
+  /******************** I fucked up the order when adding viewport shit for mobile, so all the default stuff up top here is for mobile, desktop viewer below ************/
 
 
 h1.rainbow { /* main headers, rainbow big*/
 	text-align: center;
-  font-size: 3vmax;
+  font-size: 2vmax;
   align-content: center;
   background-color: black;
+  font-family:"PressStart2P";
+  font-weight:lighter;
 }
 
 
 h2 { /* normal font white - updates; spooky notes*/
   text-align: center;
-	font-size: 2vmax;
+	font-size: 1.5vmax;
 	margin: 1em;
-	font-weight: normal;
+	font-weight:lighter;
+	font-family:"PressStart2P";
 }
 
 
 h3 { /* normal font 7anguine's red speech*/
 	color: #f70404; 
 	text-decoration:none; 
-	font-weight:bold;
-	font-size: 2vmax; 
+	font-weight:lighter;
+	font-size: 1.5vmax; 
+	font-family:"PressStart2P";
 }
 
 h4.rainbow{ /*normal font rainbow; used for regular text with rainbow*/
 	text-align: center;
-  font-size: 2vmax; 
+  font-size: 1.5vmax; 
+  font-family:"PressStart2P";
+  font-weight:lighter;
+  
 
 }
 
@@ -47,6 +55,10 @@ h6 { /* small */
   text-align: center;
   word-wrap: break-word;
 }    
+
+.t1 {
+  color:yellow;
+}  
 
 #page-container { /* div container starting after <body> ending between </footer> and </body> wraps whole body including footer */
   position: relative;
@@ -67,14 +79,39 @@ h6 { /* small */
 #box2 { /*marquee outline box with grey bg - for heli banners*/
   border-style: solid;
   border-width: 1px;
-  font-size: 20px;
-  box-sizing: border-box;
-  padding-top: 10px;
-  padding-left: 5px;
-  padding-right: 5px;
+  box-sizing: content-box;
+  padding-top: 3px;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-bottom:-40px;
   height: 43px;
   vertical-align: middle;
   background-color: #131313;
+  font-weight: normal;	
+	font-size: medium;
+	font-style: normal;
+	letter-spacing: -1px;
+	font-stretch: extra-condensed;
+	margin-bottom:5px;
+	margin-top: -10px;
+	
+}  
+
+.box3 { /*marquee transparent bg - for heli banner on index*/
+  border-width: 0px;
+  padding-top: auto;
+  animation: rainbow 2.5s linear;
+	animation-iteration-count: infinite;
+	margin: 0px;
+	box-sizing: border-box;
+	height: 45px;
+	font-family:"PressStart2P";
+	font-weight: normal;	
+	font-size: medium;
+	font-style: normal;
+	letter-spacing: -1px;
+	font-stretch: semi-condensed;
+	
 }  
     
 .dialog { /*grey tile back*/
@@ -96,6 +133,22 @@ h6 { /* small */
   text-align: center;
   margin: auto;
   align-content: center;
+}  
+  
+  .d3 { /*light grey tile back for social icons*/
+  background-color: #c8bcbd; /*the color of the tile*/
+  /*give the button curved corners, alter the size as required*/
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border-color: #f70404;
+  border:outset;
+  width:12vmax;
+  margin-left: auto;
+  padding-right:10px;
+  display:inline-block;
+  text-align: center;
+  align-content: center;
   
 }  
 .enter { /*enter button*/
@@ -115,8 +168,6 @@ h6 { /* small */
   margin-left: auto;
   margin-right: auto;
   line-height: 8vmax;
-
-
 }
 
 .box1 { /*marquee outline box with black bg*/
@@ -129,10 +180,16 @@ h6 { /* small */
 	margin: 0px;
 	box-sizing: border-box;
 	height: 45px;
+	font-family:"PressStart2P";
+	font-weight: normal;	
+	font-size: medium;
+	font-style: normal;
+	letter-spacing: -1px;
+	font-stretch: semi-condensed;
 
 }
 
-.button1 { /*grey button red font and outline*/
+.button1 { /*grey button red font and outline desktop*/
  
   color: #f70404;
   background-color:#131313;
@@ -143,20 +200,19 @@ h6 { /* small */
   -moz-border-radius: 40px;
   -webkit-border-radius: 40px;
   border-radius: 40px;
-  font-size:2vmax;
-  padding: 2px;
+  font-size:1.7vmax;
+  padding-top: 10px;
+  padding-bottom: auto;
   display: inline-block;
-  width: 10vmax;
-  height: 3vmax;
+  width: 12vmax;
+  height: 4vmax;
   margin:auto;
   text-align: center;
-
-
-
+  font-family:"PressStart2P";
 
 }
 
-.button4 { /*grey button red font and outline - for chosen tab*/
+.button4 { /*grey button red font and outline - for chosen tab desktop*/
 
   color: black;
   background-color:#c8bcbd;
@@ -167,14 +223,15 @@ h6 { /* small */
   -moz-border-radius: 40px;
   -webkit-border-radius: 40px;
   border-radius: 40px;
-  font-size:2vmax;
-  padding: 2px;
+  font-size:1.7vmax;
+  padding-top: 10px;
+  padding-bottom: auto;
   display: inline-block;
-  width: 10vmax;
-  height: 3vmax;
+  width: 12vmax;
+  height: 4vmax;
   margin:auto;
   text-align: center;
-
+  font-family:"PressStart2P";
 
 }
 
@@ -206,11 +263,11 @@ h6 { /* small */
   display: block;
   box-sizing: border-box;
   width: 14vmax;
-  height: 3vmax;
+  height: 4vmax;
   margin:auto;
   text-align: center;
   line-height: 3vmax;
-
+  font-family:"PressStart2P";
 
 }
 
@@ -224,16 +281,16 @@ h6 { /* small */
   -moz-border-radius: 40px;
   -webkit-border-radius: 40px;
   border-radius: 40px;
-  font-size:2vmax;
-  padding-left: auto;
-  padding-right: auto;
+  font-size:1vmax;
+  padding: 3px;
   display: block;
   box-sizing: border-box;
-  width: 18vmax;
-  height: 3vmax;
+  width: 75%;
+  height: auto;
   margin:auto;
   text-align: center;
   line-height: 3vmax;
+  font-family:"PressStart2P";
 }
 
 .buy-button {
@@ -253,6 +310,7 @@ h6 { /* small */
         margin-right:auto;
         padding-top: 1rem;
         margin-top: 1rem;
+        font-family:"PressStart2P";
       }
       .buy-button:hover {
         background: rgb(21, 61, 98);
@@ -386,6 +444,7 @@ a:active {
         margin-right:auto;
         padding-top: 1rem;
         margin-top: 1rem;
+        font-family:"PressStart2P";
       }
       .buy-button:hover {
         background: rgb(21, 61, 98);
@@ -402,17 +461,19 @@ a:active {
             }       
 }
 
-@media (min-width: 1850px) { /* i did this shit backwards by accident, this is settings for desktops. default shit is for mobile -_- actually maybe not? idfk*/
+@media (min-width: 1150px) { /* i did this shit backwards by accident, this is settings for desktops. default shit is for mobile -_- actually maybe not? idfk*/
   .button1 {
     width: auto;
     height: auto;
     font-size: 1vw;  
     padding-left: 1vw;
     padding-right: 1vw;
+    padding-bottom: 3px;
     margin:auto;
     text-align: center;
     line-height: 2vw;
     border-width: 2px;
+    font-family:"PressStart2P";
   }  
   .button4 { /*grey button red font and outline - for chosen tab*/
     width: auto;
@@ -420,10 +481,12 @@ a:active {
     font-size: 1vw;  
     padding-left: 1vw;
     padding-right: 1vw;
+    padding-bottom: 3px;
     margin:auto;
     text-align: center;
     line-height: 2vw;
     border-width: 2px;
+    font-family:"PressStart2P";
   }
 
     .button4 a:link {
@@ -442,23 +505,24 @@ a:active {
   .button2 { /*black button grey font and outline - contacts*/
     height: 2em;
     width: 7em;
-    font-size: 2em;  
+    font-size: 1vw;  
     margin:auto;
     text-align: center;
     line-height: 2em;
     padding: 0;
     border-width: 2px;
+    font-family:"PressStart2P";
   }
 
   .button3 { /*black button grey font and outline - for y.at wallet and extended bubbles*/
-    height: 2em;
-    width: 9em;
-    font-size: 2em;  
+    height: auto;
+    width: 75%;
+    font-size: .75vw;  
     margin:auto;
     text-align: center;
-    line-height: 2em;
     padding: 0;
     border-width: 2px;
+    font-family:"PressStart2P";
   }  
     
  .enter { /*enter button*/
@@ -472,18 +536,21 @@ a:active {
   width: 9vmax;
   height: 4vmax;
   box-sizing: content-box;
+  font-family:"PressStart2P";
   }  
   
   h1.rainbow { /* main headers, rainbow big*/
 	  text-align: center;
     font-size: 30px;
     align-content: center;
+    font-family:"PressStart2P";
   }
 
 
   h2 { /* normal font white - updates; spooky notes*/
     text-align: center;
 	  font-size: 16px;
+	  font-family:"PressStart2P";
   }
 
 
@@ -492,11 +559,14 @@ a:active {
 	  text-decoration:none; 
 	  font-weight:bold;
 	  font-size: 16px; 
+    font-family:"PressStart2P";  
   }
+
 
   h4.rainbow{ /*normal font rainbow; used for regular text with rainbow - sub sections*/
 	  text-align: center;
     font-size: 16px; 
+    font-family:"PressStart2P";
 
   }
 
@@ -512,9 +582,27 @@ a:active {
 
   }  
   
+  .d3 { /*light grey tile back for social icons*/
+  background-color: #c8bcbd; /*the color of the tile*/
+  /*give the button curved corners, alter the size as required*/
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border-color: #f70404;
+  border:outset;
+  width:125px;
+  margin-left: auto ;
+  margin-right: auto ;
+  margin-top: 3px;
+  margin-bottom:3px;
+  padding:5px;
+  display:inline-block;
+  text-align: center;
+  align-content: center;
+  }
+  
 
 }  
-
 
 .cc {
   overflow-wrap: break-word; 
@@ -534,7 +622,3 @@ a:active {
   margin: auto;
   align-content: center;
 }  
-  
-
-
-
